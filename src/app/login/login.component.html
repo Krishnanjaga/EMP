@@ -1,0 +1,57 @@
+<div class="auth-page">
+    <div class="container page">
+      <div class="row">
+  
+        <div class="col-md-6 offset-md-3 col-xs-12">
+        
+  
+          <form [formGroup]="authForm" (ngSubmit)="submitForm()">
+            <fieldset [disabled]="isSubmitting">
+              <fieldset class="form-group" [ngClass]="{'has-error' : authForm.get('username')?.errors && (authForm.get('username')?.touched || authForm.get('username')?.dirty)}">
+                <input
+                  formControlName="username"
+                  placeholder="Username"
+                  class="form-control form-control-lg"
+                  type="text">
+                  <!-- <span *ngIf="authForm.get('username')?.errors">
+                    required
+                  </span> -->
+              </fieldset>
+              <fieldset class="form-group" [ngClass]="{'has-error' : authForm.get('email')?.errors && (authForm.get('email')?.touched || authForm.get('email')?.dirty)}">
+                <input
+                  formControlName="email"
+                  placeholder="Email"
+                  class="form-control form-control-lg"
+                  type="text" />
+                  <span [hidden]="value1">
+                    password already taken!
+                  </span>
+                  <!-- <span *ngIf="!save">exsitemail</span> -->
+              </fieldset>
+              <fieldset class="form-group" [ngClass]="{'has-error' : authForm.get('password')?.errors && (authForm.get('password')?.touched || authForm.get('password')?.dirty)}">
+                <input
+                  formControlName="password"
+                  placeholder="Password"
+                  class="form-control form-control-lg"
+                  type="password" />
+                  <!-- <span *ngIf="authForm.get('password')?.errors">
+                    required
+                  </span> -->
+              </fieldset>
+             <button  class="btn btn-lg btn-primary pull-xs-right" type="submit">
+                 Save
+              </button>
+              <!-- <div *ngFor="let item of list" >
+
+                <table>
+                  <th>email address:<br> {{item.email}} </th>
+                  <th>password:<br>   {{item.password}}</th>
+                  <th>username:<br>  {{item.username}}</th>
+                  </table>
+              </div> -->
+            <button class="btn btn-lg btn-primary mx-3" routerLink="/login">login</button>          
+            </fieldset>
+          </form>
+        </div>
+      </div>
+  

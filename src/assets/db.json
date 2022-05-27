@@ -1,0 +1,98 @@
+{
+  "register": [
+    {
+      "email": "krishnan",
+      "password": "krishnanjaga",
+      "username": "krish",
+      "id": 1
+    },
+    {
+      "email": "aaaa",
+      "password": "lllllllllll",
+      "username": "ll",
+      "id": 2
+    },
+    {
+      "email": "kri",
+      "password": "kri",
+      "username": "kri",
+      "id": 3
+    },
+    {
+      "email": "krishnanjaga56@gmail.com",
+      "password": "Krishnan@1999",
+      "username": "krishnan",
+      "id": 4
+    },
+    {
+      "email": "nivi@gmail.com",
+      "password": "123",
+      "username": "nivedha",
+      "id": 5
+    },
+    {
+      "email": "kayalanu@48@gmail.com",
+      "password": "kayalanu",
+      "username": "kayal",
+      "id": 6
+    },
+    {
+      "email": "",
+      "password": "",
+      "username": "",
+      "id": 7
+    },
+    {
+      "email": "",
+      "password": "",
+      "username": "",
+      "id": 8
+    },
+    {
+      "email": "",
+      "password": "",
+      "username": "",
+      "id": 9
+    },
+    {
+      "email": "",
+      "password": "",
+      "username": "",
+      "id": 10
+    }
+  ],
+  "company": [
+    {
+      "name": "krishnan",
+      "Gender": "male",
+      "native": "Coconut",
+      "contact": 9790132648,
+      "Email": "krishnanjaga56@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "kjgh",
+      "Gender": "male",
+      "native": "/,",
+      "contact": "",
+      "Email": "",
+      "id": 2
+    },
+    {
+      "name": "kris",
+      "Gender": "male",
+      "native": "Banana",
+      "contact": 48842,
+      "Email": "kjfjsldk",
+      "id": 3
+    },
+    {
+      "name": "nivi",
+      "Gender": "female",
+      "native": "Coconut",
+      "contact": 87899,
+      "Email": "hguweyr7y8e74",
+      "id": 4
+    }
+  ]
+}

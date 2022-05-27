@@ -1,0 +1,27 @@
+<div class="banana">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fk79om7dMNiWsursPNhIw6lUp_JFi6mnkg&usqp=CAU"><br><hr>
+<input type="number"  placeholder="1kg" [(ngModel)]="hello">
+<button (click)="submit()">Submit</button>
+<div>Rs:{{send}}</div>
+</div>
+<hr>
+
+<!-- <button (click)="editData()"class="btn btn-warning mx-5">Edit</button> -->
+<div style="text-align: center;">
+    <div *ngFor="let item of listData" [ngStyle]="{'background-color':'green'}">
+<h2>
+        <table >
+          <tr>Customer Name: {{item.name | uppercase}} </tr>
+          <tr>Gender: {{item.Gender}}</tr>
+          <tr>Product Name: {{item.native}}</tr>
+          <tr>Contact:  {{item.contact}}</tr>
+          <tr>Email: {{item.Email}}</tr><br>
+          <tr>Total Amount: {{send}}</tr>
+      </table>
+    </h2>
+</div>
+
+
+
+</div>
+

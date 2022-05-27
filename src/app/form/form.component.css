@@ -1,0 +1,49 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hp1{
+      text-align: center;
+      width: 1500px;
+      background-color: aqua;
+      padding: center;
+     height:250px
+  }
+  .hp2{
+    text-align: center;
+    width: 1500px;
+    background-color: pink;
+    padding: center;
+    height:250px
+}
+.hp3{
+    text-align: center;
+    width: 1500px;
+    background-color: gray;
+    padding: center;
+    height:200px
+}
+.overview-boxes{
+    width: 1500px;
+    height:40px;
+    background-color: greenyellow;
+}
+.legacy{
+    width: 300px;
+    height: 300px;
+}
+.com{
+    
+    width: 1500px;
+    height:40px;
+    background-color: greenyellow;
+
+}
+.ss{
+    width: 1000px;
+    height: 30px;
+}
+
+
+  

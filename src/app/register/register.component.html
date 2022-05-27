@@ -1,0 +1,52 @@
+
+<div class="auth-page">
+    <div class="container page">
+      <div class="row">
+  
+        <div class="col-md-6 offset-md-3 col-xs-12">
+        
+<form [formGroup]="authForm1" (ngSubmit)="submit()">
+    <fieldset >
+      <fieldset class="form-group"  [ngClass]="{'has-error' : authForm1.get('email')?.errors && (authForm1.get('email')?.touched || authForm1.get('email')?.dirty)}">
+        <input
+          formControlName="email"
+          placeholder="Email"
+          class="form-control form-control-lg"
+          type="text" [ngModel]="hello"/>
+          <!-- <span *ngIf="authForm1.get('email')?.errors">
+            required
+          </span> -->
+      </fieldset>
+      <fieldset class="form-group"  [ngClass]="{'has-error' : authForm1.get('password')?.errors && (authForm1.get('password')?.touched || authForm1.get('password')?.dirty)}">
+        <input
+          formControlName="password"
+          placeholder="Password"
+          class="form-control form-control-lg"
+          type="password" />
+        
+      </fieldset>
+      <button class="btn btn-lg btn-primary mx-2" type="submit" [disabled]="authForm1.invalid">
+        sign in
+      </button>
+     
+     <button class="btn btn-lg btn-primary mx-2" routerLink="/kj" [hidden]="value">Next</button>
+      <button class="btn btn-lg btn-primary mx-2" routerLink="/register" >Register</button>
+      </fieldset>
+    </form>
+
+      <!-- <button (click)="getData()">info</button>
+      <div *ngFor="let item of list; index as i ">
+
+        <table>
+          <th>{{i}}email address:<br> {{item.email }} </th>
+          <th>password:<br>   {{item.password }}</th>
+          <th>username:<br>  {{item.username | uppercase}}</th>
+          </table>
+          </div>
+        </div> -->
+      </div>
+    </div>
+</div>
+
+
+

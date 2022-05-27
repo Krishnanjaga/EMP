@@ -1,0 +1,15 @@
+.table, th {
+    height: 50px;
+    text-align: left;
+   border: 3px solid black;
+   background-color: #c2f3d8;
+  }
+  .table, td {
+    
+    text-align: right;
+    height: 50px;
+   border: 3px solid black;
+   background-color: #d6ab84;
+   
+  }
+  
