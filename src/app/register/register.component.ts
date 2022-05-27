@@ -2,6 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -15,6 +16,7 @@ export class RegisterComponent implements OnInit {
   value:boolean=true;
   hello:any;
   array=["hello"]
+  router: any;
   
   
   constructor(public fb:FormBuilder,private app:AppService, ) {
@@ -39,6 +41,7 @@ submit(){
       alert(this.array)
       if(this.value === false){
       this.value=true;
+      this.router.navigate(['/kj']);
   
       }
       else{  

@@ -7,8 +7,6 @@ import { AppService } from '../app.service';
   styleUrls: ['./price.component.css']
 })
 export class PriceComponent implements OnInit {
-  @Input() currentItem = '';
-  @Input() item!:string; 
   hello!:number;
   value1:number=50;
    send!:number;
@@ -25,7 +23,7 @@ export class PriceComponent implements OnInit {
 this.send=this.value1*this.hello;
 this.app.getDat().subscribe((res:any)=>{
   // console.log('resbdf',res)
-  this.listData .push(res[res.length-1]);
+  this.listData .push(res[res.length-2]);
   console.log('res',res[res.length-1])
   console.log('list',this.listData)
 })
